@@ -8,7 +8,7 @@ import { Component, ElementRef } from '@angular/core';
 export class AppComponent  {
   currentVideo='Play Video';
   videos = [
-      {name: 'Nature', url: "https://vjs.zencdn.net/v/oceans.mp4"},
+      {name: 'Nature', url: "https://stackblitz.com/files/vkas05/github/aakash18012/vkas05/master/src/assets/bird.webm"},
       {name: 'Nature2', url: "https://stackblitz.com/files/vkas05/github/aakash18012/vkas05/master/src/assets/animal.mp4"}
   ];
 
