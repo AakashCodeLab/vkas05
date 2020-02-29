@@ -9,7 +9,7 @@ export class AppComponent  {
   currentVideo='Play Video';
   videos = [
       {name: 'Nature', url: "https://vjs.zencdn.net/v/oceans.mp4"},
-      {name: 'Nature2', url: "https://www.w3schools.com/tags/movie.mp4"}
+      {name: 'Nature2', url: "https://stackblitz.com/files/vkas05/github/aakash18012/vkas05/master/src/assets/animal.mp4"}
   ];
 
   tableData=[
