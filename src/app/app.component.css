@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+.my-table{
+ margin-top: 20px;
+}
+
+table.last td{
+    width:100px;
+}
+table.table{
+  table-layout: fixed;
+  width: 100%;  
+}
+.last-row{
+  overflow: auto
+}
+
+table.last  tbody{
+  display:block;
+  height:100px;
+  overflow:auto;
+}

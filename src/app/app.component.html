@@ -1,0 +1,78 @@
+<div class="my-table container">          
+  <table class="table table-bordered ">
+    <tbody>
+      <tr>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+      </tr>
+       <tr>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+      </tr>
+      <tr>
+       <td> Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+       <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td>Name: Aleber Einstein</td>
+        <td rowspan="2" colspan="3" style="text-align:center"> table & colmn</td>
+     </tr>
+      <tr>
+         <td class="last-row">
+            <table class="last">
+              <tbody>  
+                <tr  *ngFor="let data of tableData">
+                    <td>{{data.color}}</td>
+                    <td>{{data.value}}</td>
+                </tr> 
+              </tbody>
+            </table>
+        </td>
+        <td class="last-row"> 
+            <table class="last">
+             <tbody>  
+                <tr  *ngFor="let data of tableData">
+                    <td>{{data.color}}</td>
+                    <td>{{data.value}}</td>
+                </tr> 
+              </tbody>
+            </table>
+        </td>
+        <td class="last-row">
+            <table class="last">
+              <tbody>  
+                <tr  *ngFor="let data of tableData">
+                    <td>{{data.color}}</td>
+                    <td>{{data.value}}</td>
+                </tr> 
+              </tbody>
+            </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h5>Play Videos </h5>
+
+ <select class="form-control" type="number" [(ngModel)]="currentVideo" (ngModelChange)="videoChange($event)" placeholder="currentVideo">
+      <option *ngFor="let video of videos" [ngValue]="video.url">{{video.name}}</option>
+  </select>
+
+	<video id="my_video" class="" width="640px" height="267px" controls preload="none"
+		data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+		<source [src]="currentVideo" type='video/mp4' />
+	</video>
+
